@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books by Nithin Vadekkapat</title>
+  <meta name="description" content="A collection of open technical books on machine learning, math, computer vision, and adjacent topics.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --bg-card: #ffffff;
+      --ink: #1a1a1a;
+      --ink-soft: #4a4a4a;
+      --ink-faint: #8a8a8a;
+      --accent: #2a5d8a;
+      --accent-soft: #e8f0f7;
+      --border: #e6e2db;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14171c;
+        --bg-card: #1d2128;
+        --ink: #e8e6e3;
+        --ink-soft: #b8b6b2;
+        --ink-faint: #7a7872;
+        --accent: #6ba3d6;
+        --accent-soft: #1f2a36;
+        --border: #2a2e36;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      flex: 1;
+      width: 100%;
+    }
+    header {
+      margin-bottom: 64px;
+    }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-faint);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: 'Source Serif Pro', Georgia, serif;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: var(--ink-soft);
+      max-width: 640px;
+    }
+    .books {
+      display: grid;
+      gap: 20px;
+    }
+    .book {
+      display: block;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 32px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .book:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+    .book-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .book-title {
+      font-family: 'Source Serif Pro', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .book-domain {
+      font-family: 'Source Code Pro', ui-monospace, monospace;
+      font-size: 13px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .book-tagline {
+      font-size: 15px;
+      color: var(--ink-soft);
+      margin-bottom: 16px;
+    }
+    .book-meta {
+      display: flex;
+      gap: 16px;
+      font-size: 13px;
+      color: var(--ink-faint);
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+    .book-meta span::before { content: "·"; margin-right: 16px; color: var(--ink-faint); }
+    .book-meta span:first-child::before { content: ""; margin-right: 0; }
+    footer {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 32px 24px 40px;
+      width: 100%;
+      font-size: 13px;
+      color: var(--ink-faint);
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    footer a { color: var(--ink-soft); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 600px) {
+      .container { padding: 56px 20px 40px; }
+      h1 { font-size: 34px; }
+      .book { padding: 24px; }
+      .book-header { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="eyebrow">Open technical books</p>
+      <h1>Books by Nithin Vadekkapat</h1>
+      <p class="subtitle">A small collection of free, simulation-first books on math, machine learning, and computer vision. Built in the open with Quarto. Read in your browser; the source lives on GitHub.</p>
+    </header>
+
+    <main class="books">
+      <a class="book" href="https://math.vadekkapat.com">
+        <div class="book-header">
+          <div class="book-title">Math for Machine Learning</div>
+          <div class="book-domain">math.vadekkapat.com</div>
+        </div>
+        <p class="book-tagline">A simulation-first introduction to probability, statistics, and linear algebra — the math you actually need to understand modern ML.</p>
+        <div class="book-meta">
+          <span>Probability</span>
+          <span>Statistics</span>
+          <span>Linear algebra</span>
+        </div>
+      </a>
+
+      <a class="book" href="https://ml.vadekkapat.com">
+        <div class="book-header">
+          <div class="book-title">Machine Learning</div>
+          <div class="book-domain">ml.vadekkapat.com</div>
+        </div>
+        <p class="book-tagline">Notes and tutorials on machine learning, from first principles to modern architectures — built up the same way I learned them.</p>
+        <div class="book-meta">
+          <span>ML fundamentals</span>
+          <span>Deep learning</span>
+          <span>Computer vision</span>
+        </div>
+      </a>
+    </main>
+  </div>
+
+  <footer>
+    <span>© Nithin Vadekkapat</span>
+    <span><a href="https://github.com/nv-mldev">github.com/nv-mldev</a></span>
+  </footer>
+</body>
+</html>
