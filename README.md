@@ -6,6 +6,7 @@ The page itself is a single static `index.html` (no build step). Each book lives
 
 - [`math.vadekkapat.com`](https://math.vadekkapat.com) — *Math for Machine Learning* — [`nv-mldev/math-bootcamp`](https://github.com/nv-mldev/math-bootcamp)
 - [`ml.vadekkapat.com`](https://ml.vadekkapat.com) — *Machine Learning*
+- [`raman.vadekkapat.com`](https://raman.vadekkapat.com) — *A Signal Processing Primer on Raman Scattering* — [`nv-mldev/raman-spectroscopy`](https://github.com/nv-mldev/raman-spectroscopy)
 
 ## Deploying
 
